@@ -1,0 +1,26 @@
+/* chatbot.css */
+
+/* Styles for the chat popup container */
+.chat-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  /* Styles for the chat button */
+  .chat-button {
+    background-color: #0d0f39;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for the chat button icon */
+  .chat-button img {
+    width: 44px;
+    height: 44px;
+  }
+  
