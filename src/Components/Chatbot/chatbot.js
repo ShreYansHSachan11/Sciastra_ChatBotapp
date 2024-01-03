@@ -10,8 +10,8 @@ const ChatBot = () => {
   const classOptions = [
     "Teaching Methodology and Approach",
     "Support and Resources",
-    "Course Structure and Offerings",
-    "Beyond Exam Preparation:",
+    "Course Structure",
+    "Beyond Exam Preparation",
   ]; 
 
   const questionsByClass = {
@@ -31,7 +31,7 @@ const ChatBot = () => {
       "Are there opportunities for students to engage in research-oriented projects or internships through SciAstra?",
       // Add more questions related to this class
     ],
-    "Course Structure and Offerings": [
+    "Course Structure": [
       "Can you provide details about the course structure and duration for the preparation of specific entrance exams?",
       "How adaptable is SciAstras curriculum to accommodate updates or changes in exam patterns and syllabi?",
       "Are there any trial sessions or introductory courses for students to get a feel for the teaching approach before enrolling?",
@@ -128,7 +128,11 @@ const ChatBot = () => {
     <div ref={chatHistoryRef} className="chat-history">
       {chatHistory.map((entry, index) => (
         <div key={index} className={`message ${entry.type}`}>
-          {entry.message}
+          {entry.type === 'user' ? (
+            <div className="question-right">{entry.message}</div>
+          ) : (
+            <div className="answer-left">{entry.message}</div>
+          )}
         </div>
       ))}
     </div>
@@ -136,7 +140,7 @@ const ChatBot = () => {
 
   const renderOptions = () => (
     <div className="class-options">
-      <p>Please select a class:</p>
+      <p>What's your query regarding:</p>
       {classOptions.map((option, index) => (
         <button key={index} onClick={() => handleClassSelection(option)}>
           {option}
