@@ -1,4 +1,4 @@
-/* chatbot.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 
@@ -9,14 +9,14 @@
     text-align: center;
     margin-top: 200px;
 }
-/* Styles for the chat popup container */
+
 .chat-popup {
     position: fixed;
     bottom: 20px;
     right: 20px;
   }
   
-  /* Styles for the chat button */
+
   .chat-button {
     background-color: #000000;
     border: none;
@@ -28,7 +28,7 @@
     box-shadow: 5px 6px 18px rgb(107 182 233 / 80%);
   }
   
-  /* Styles for the chat button icon */
+
   .chat-button img {
     width: 49px;
     height: 49px;

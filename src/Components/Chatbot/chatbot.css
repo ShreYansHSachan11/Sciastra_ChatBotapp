@@ -1,6 +1,4 @@
-/* chatbot.css */
 
-/* Styles for the chatbot container */
 .chatbot-container {
     width: 500px;
     height: 600px;
@@ -10,14 +8,14 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   
-  /* Styles for the chatbot */
+
   .chatbot {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
   
-  /* Styles for the chat history */
+
   .chat-history {
     flex: 1;
     overflow-y: auto;
@@ -26,7 +24,7 @@
     flex-direction: column;
   }
   
-  /* Styles for chat messages */
+
   .message {
     padding: 8px 12px;
     border-radius: 6px;
@@ -35,14 +33,14 @@
     word-wrap: break-word;
   }
   
-  /* Styles for user messages */
+
   .message.user {
     align-self: flex-end;
     background-color: #0084ff;
     color: white;
   }
   
-  /* Styles for bot messages */
+
   .message.bot {
     align-self: flex-start;
     background-color: #e5e5ea;
@@ -59,7 +57,7 @@
   form{
   display: flex;
   }
-  /* Styles for the user input text field */
+
   .user-input {
     flex: 1;
     margin-right: 10px;
@@ -71,7 +69,7 @@
     width:362px;
   }
   
-  /* Styles for the send button */
+
   .send-button {
     padding: 10px 20px;
     border: none;
@@ -83,7 +81,7 @@
     transition: background-color 0.3s ease;
   }
   
-  /* Hover effect for the send button */
+
   .send-button:hover {
     background-color: #45a049;
   }
@@ -95,7 +93,7 @@
     justify-content: center;
   }
   
-  /* Styles for individual class option buttons */
+ 
   .class-options button {
     padding: 10px 16px;
     margin: 8px;
@@ -108,7 +106,7 @@
     transition: background-color 0.3s ease;
   }
   
-  /* Hover effect for class option buttons */
+
   .class-options button:hover {
     background-color: #005daa;
   }
@@ -121,10 +119,10 @@
     align-items: center;
   }
   
-  /* Styles for individual question buttons */
+
   .questions button {
-    margin: 8px;
-    padding: 10px 16px;
+    margin: 4px;
+    padding: 9px 13px;
     border: none;
     border-radius: 20px;
     background-color: #e0e0e0;
@@ -134,10 +132,13 @@
     transition: background-color 0.3s ease;
   }
   
-  /* Hover effect for question buttons */
+
   .questions button:hover {
     background-color: #ccc;
   }
 
+  .questionHead{
+    margin-top: -8px;
+  }
   
   

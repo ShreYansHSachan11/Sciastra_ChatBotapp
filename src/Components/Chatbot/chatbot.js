@@ -36,7 +36,7 @@ const ChatBot = () => {
       "How adaptable is SciAstras curriculum to accommodate updates or changes in exam patterns and syllabi?",
       "Are there any trial sessions or introductory courses for students to get a feel for the teaching approach before enrolling?",
     ],
-    "Beyond Exam Preparation:": [
+    "Beyond Exam Preparation": [
       "Can you share success stories or experiences of students who transitioned to prestigious institutes with SciAstras guidance?",
       "How does SciAstra support students in their research aspirations beyond exams?",
       "What sets SciAstra apart from other coaching institutes in terms of student outcomes and support?",
@@ -151,7 +151,7 @@ const ChatBot = () => {
 
   const renderQuestions = () => (
     <div className="questions">
-      <p>Questions related to {selectedClass}:</p>
+      <p className="questionHead">Questions related to {selectedClass}:</p>
       {questionsByClass[selectedClass].map((question, index) => (
         <button key={index} onClick={() => handleQuestionSelection(question)}>
           {question}
